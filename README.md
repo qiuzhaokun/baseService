@@ -29,6 +29,11 @@
         ```
    - 签证,```HMACSHA256``` 加盐为：secret 加密
 
+
+#### 后端服务
+- 启动 server 其中启动tick、webSocket 等服务
+
+
 #### 微信 access_token 中控服务
 - api 地址：http://127.0.0.1:8072/accessToken
 

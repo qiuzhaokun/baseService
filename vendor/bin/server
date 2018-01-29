@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Des: 服务注册入口
+ * Author: larry
+ * Date: 29/01/2018
+ * Time: 4:01 PM
+ */
+
+if (!ini_get('date.timezone')) {
+    ini_set('date.timezone', 'UTC');
+}
+define('ROOT_DIR', dirname(dirname(__DIR__)));
+
+
+require_once ROOT_DIR . '/app/Http/Server/weChatServer.php';
+\App\Http\Server\weChatServer::start();
